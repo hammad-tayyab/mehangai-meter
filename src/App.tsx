@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { inflationIndex, nearestSnapshotYear, priceSnapshots, type ItemPrice } from './data/inflation'
 
 const years = Object.keys(inflationIndex).map(Number).filter((year) => year <= 2025).sort((a, b) => b - a)
@@ -59,6 +60,7 @@ export default function App() {
   const ratio = inflationIndex[2026] / inflationIndex[year]
 
   return <main className="min-h-screen overflow-hidden bg-cream">
+    <Analytics />
     <section className="pattern relative isolate overflow-hidden bg-pakistan px-4 pb-24 pt-8 text-white sm:px-6 sm:pt-12">
       <MinarBackdrop />
       <div className="relative mx-auto max-w-4xl">
