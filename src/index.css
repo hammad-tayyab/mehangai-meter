@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme { --color-pakistan: #01411c; --color-pakistan-dark: #003315; --color-gold: #e9b949; --color-cream: #f7f5ed; }
+
+* { box-sizing: border-box; }
+html { background: #f7f5ed; }
+body { margin: 0; min-width: 320px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #143221; }
+.pattern { background-image: radial-gradient(circle at 12px 12px, rgba(233,185,73,.25) 1.8px, transparent 2px), radial-gradient(circle at 2px 2px, rgba(255,255,255,.18) 1px, transparent 1.5px); background-size: 24px 24px; }
+.truck-border { background: repeating-linear-gradient(90deg, #e9b949 0 17px, #d85734 17px 25px, #2c8c78 25px 37px, #fff 37px 43px); }
+input, select { appearance: none; }
+select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2301411c' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-position: right 1rem center; background-repeat: no-repeat; }
